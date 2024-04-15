@@ -1,20 +1,8 @@
-import { useEffect, useState } from "react";
+type ButtonsProps = {
+  toggleTheme: () => void;
+};
 
-function Buttons() {
-  const storedTheme = localStorage.getItem("theme");
-  const [theme, setTheme] = useState(storedTheme ? storedTheme : "light");
-
-  useEffect(() => {
-    localStorage.setItem("theme", theme);
-    document.querySelector("html")?.setAttribute("data-theme", theme);
-  }, [theme]);
-
-  const toggleTheme = () => {
-    const newTheme = theme === "light" ? "dark" : "light";
-    setTheme(newTheme);
-  };
-
-
+function Buttons({ toggleTheme }: ButtonsProps) {
   return (
     <div className="fixed bottom-4 right-4 flex flex-col gap-2">
       <div className="flex justify-end">
