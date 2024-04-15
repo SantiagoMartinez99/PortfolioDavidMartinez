@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { db } from "../data/db";
 import { dbTech } from "../data/dbTech";
 
@@ -7,16 +7,16 @@ function MyProjects() {
   const [data] = useState(db);
 
   return (
-    <section className="">
-      <h1 className="py-10 text-5xl font-bold text-center "> Mis proyectos</h1>
+    <section id="my-projects">
+      <h1 className="py-10 text-5xl font-bold text-center"> Mis proyectos</h1>
 
-      <section className="flex flex-col  px-5 py-5 items-center bg-base-100  ">
+      <section className="flex flex-col  px-5 py-5 items-center bg-base-100">
         {data.map((project) => (
           <div
             key={project.id}
-            className="card lg:card-side shadow-2xl  md:mx-32 mx-5 my-5 flex flex-col"
+            className="card lg:card-side shadow-2xl  md:mx-32 mx-5 my-5 flex flex-col transition ease-in-out delay-100 hover:scale-110 "
           >
-            <figure className="lg:w-1/2 w-full h-full lg:h-1/2 ">
+            <figure className="lg:w-1/2 w-full h-full lg:h-1/2">
               <img src={project.image} alt="Album" />
             </figure>
             <div className="card-body flex lg:w-1/2 w-full ">

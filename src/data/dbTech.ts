@@ -7,8 +7,17 @@ import TsIcon from "../assets/techIcons/icons8-mecanografiado-48.png";
 import ReactIcon from "../assets/techIcons/icons8-reaccionar-nativo-48.png";
 import AngularIcon from "../assets/techIcons/icons8-angular-48.png";
 import ZustandIcon from "../assets/techIcons/zustand.png";
+import DjangoIcon from "../assets/techIcons/icons8-django-48.png"
 
 export const dbTech: Tech[] = [
+  {
+    name: "React",
+    image: ReactIcon,
+  },
+  {
+    name: "Angular",
+    image: AngularIcon,
+  },
   {
     name: "HTML",
     image: HtmlIcon,
@@ -35,7 +44,7 @@ export const dbTech: Tech[] = [
   },
   {
     name: "Django",
-    image: "asdasd",
+    image: DjangoIcon,
   },
   {
     name: "MaterialUI",
@@ -49,4 +58,5 @@ export const dbTech: Tech[] = [
     name: "Zustand",
     image: ZustandIcon,
   },
+
 ];

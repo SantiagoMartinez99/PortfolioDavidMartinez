@@ -3,19 +3,29 @@ import CalorieTracker from "../assets/projectImages/calorieTrackerImg2.png";
 import TiendaVirtual from "../assets/projectImages/ecommerceImg.png";
 import ControlGastos from "../assets/projectImages/presupuestoImg copy.png";
 import Propinas from "../assets/projectImages/propinasImg.png";
+import RedditProject from "../assets/projectImages/RedditProject.png";
 import type { Project } from "../types";
 
 export const db: Project[] = [
   {
     id: 1,
-    name: "Citas Medicas",
-    image: CitasMedicasImg,
-    desc: "Aplicación web básica de manejo de citas de mascotas",
-    techUsed: ["JS", "HTML", "CSS"],
+    name: "Clon Reddit",
+    image: RedditProject,
+    desc: "Pagina replicando el funcionamiento de Reddit junto a funcionalidad de traducción.",
+    techUsed: ["JS", "HTML", "CSS", "Django"],
     link: "asd",
   },
   {
     id: 2,
+    name: "Citas Medicas V2",
+    image: CitasMedicasImg,
+    desc: "Aplicación web básica de manejo de citas de mascotas",
+    techUsed: ["JS", "HTML", "Tailwind", "Zustand"],
+    link: "asd",
+  },
+
+  {
+    id: 3,
     name: "Control de Gastos",
     image: ControlGastos,
     desc: "Aplicación web básica para el control de gastos básicos",
@@ -23,7 +33,7 @@ export const db: Project[] = [
     link: "asd",
   },
   {
-    id: 3,
+    id: 4,
     name: "Calculadora de Propinas",
     image: Propinas,
     desc: "Aplicación web básica para calcular propinas",
@@ -31,7 +41,7 @@ export const db: Project[] = [
     link: "ad",
   },
   {
-    id: 4,
+    id: 5,
     name: "Contador de Calorías",
     image: CalorieTracker,
     desc: "Aplicación web básica para el seguimiento y control de actividad física y alimentación y las calorías asociadas.",
@@ -39,7 +49,7 @@ export const db: Project[] = [
     link: "asd",
   },
   {
-    id: 5,
+    id: 6,
     name: "Tienda Virtual",
     image: TiendaVirtual,
     desc: "E commerce para una tienda de guitarras.",
@@ -47,11 +57,11 @@ export const db: Project[] = [
     link: "asd",
   },
   {
-    id: 5,
-    name: "Citas Medicas V2",
+    id: 7,
+    name: "Citas Medicas",
     image: CitasMedicasImg,
     desc: "Aplicación web básica de manejo de citas de mascotas",
-    techUsed: ["JS", "HTML", "Tailwind","Zustand"],
+    techUsed: ["JS", "HTML", "CSS"],
     link: "asd",
   },
-];  
+];
