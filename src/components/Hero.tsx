@@ -22,7 +22,7 @@ function Hero() {
         />
         <section>
           <h1 className="text-5xl font-bold">{t("hero.heroTitle")}</h1>
-          <p className="py-6">{t("hero.heroDesc")}</p>
+          <p className="py-6 text-xl">{t("hero.heroDesc")}</p>
           <div className="flex gap-3">
             <button className="btn btn-primary">{t("hero.btnContact")}</button>
             <button className="btn btn-primary">
