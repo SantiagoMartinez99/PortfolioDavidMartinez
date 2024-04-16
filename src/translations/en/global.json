@@ -1,0 +1,32 @@
+{
+  "header": {
+    "myProjects": "My Projects",
+    "technologies": "Technologies",
+    "experience": "Experience"
+  },
+  "hero": {
+    "heroTitle": "¡👋 Hi, I'm Santiago Martinez!",
+    "heroDesc": "I am a Systems Engineer focused on Web Development, mainly with React, I also use Angular, and I manage JS, TS, Firebase, Django and other technologies.",
+    "btnContact": "Contact me here",
+    "btnDownloadCV": "Download CV"
+  },
+  "myProjects": {
+    "technologies": "Technologies used:",
+    "btnGoToProject": "Go to project"
+  },
+  "experience": {
+    "title":"Experience",
+    "college": {
+      "title": "Systems Engineer",
+      "description": "Systems Engineer graduated from Universidad Distrital, with a solid background in basic, humanistic and technical sciences. Passionate about technology and committed to continuous improvement. Focused in areas such as software engineering, computer science, computer management and communication networks."
+    },
+    "kantar": {
+      "title": "Scripting Assistant",
+      "description": "Active collaborator in designing and conducting surveys, followed by thorough analysis of the data obtained. Skilled in the use of IBM SPSS software to conduct effective statistical analysis, thus contributing to the successful development and execution of projects."
+    },
+    "exsis": {
+      "title": "Jr Front end developer",
+      "description": "I have been actively involved in the design and improvement of applications using React, collaborating in the implementation of a data warehouse to centralize business information using Angular. I have also participated in the development of applications for the generation of smart contracts and management of real estate transactions through blockchain, using React and Solidity."
+    }
+  }
+}

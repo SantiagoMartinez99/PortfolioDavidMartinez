@@ -1,9 +1,10 @@
 import { useState } from "react";
 import { db } from "../data/db";
 import { dbTech } from "../data/dbTech";
+import { useTranslation } from "react-i18next";
 
 function MyProjects() {
-  // Destructure the state value from useState
+  const [t, i18n] = useTranslation("global");
   const [data] = useState(db);
 
   return (
@@ -14,7 +15,7 @@ function MyProjects() {
         {data.map((project) => (
           <div
             key={project.id}
-            className="card lg:card-side shadow-2xl  md:mx-32 mx-5 my-5 flex flex-col transition ease-in-out delay-100 hover:scale-110 "
+            className="card lg:card-side shadow-2xl  md:mx-72 mx-5 my-5 flex flex-col transition ease-in-out delay-100 hover:scale-110 "
           >
             <figure className="lg:w-1/2 w-full h-full lg:h-1/2">
               <img src={project.image} alt="Album" />
@@ -22,6 +23,8 @@ function MyProjects() {
             <div className="card-body flex lg:w-1/2 w-full ">
               <h2 className="card-title ">{project.name}</h2>
               <p>{project.desc}</p>
+              <h4 className="font-bold">{t("myProjects.technologies")}</h4>
+
               <div className="flex gap-2">
                 {project.techUsed.map((techName) => {
                   const tech = dbTech.find((tech) => tech.name === techName);
@@ -37,7 +40,9 @@ function MyProjects() {
                 })}
               </div>
               <div className="card-actions justify-end">
-                <button className="btn btn-primary">Ir al proyecto</button>
+                <a className="btn btn-primary" href={project?.link}>
+                  {t("myProjects.btnGoToProject")}
+                </a>
               </div>
             </div>
           </div>

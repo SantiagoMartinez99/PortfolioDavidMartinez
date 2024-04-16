@@ -1,8 +1,12 @@
+import { useTranslation } from "react-i18next";
+
 type ButtonsProps = {
   toggleTheme: () => void;
 };
 
 function Buttons({ toggleTheme }: ButtonsProps) {
+  const [t, i18n] = useTranslation("global");
+
   return (
     <div className="fixed bottom-4 right-4 flex flex-col gap-2">
       <div className="flex justify-end">
@@ -29,7 +33,13 @@ function Buttons({ toggleTheme }: ButtonsProps) {
 
       <div className="flex justify-end">
         <label className="swap swap-flip text-5xl">
-          <input type="checkbox" />
+          <input
+            type="checkbox"
+            onChange={(e) => {
+              const newLanguage = e.target.checked ? "es" : "en";
+              i18n.changeLanguage(newLanguage);
+            }}
+          />
 
           <div className="swap-on">🇪🇸</div>
           <div className="swap-off">🇺🇸</div>

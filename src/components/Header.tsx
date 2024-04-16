@@ -1,6 +1,9 @@
 import { useEffect } from "react";
+import { useTranslation } from "react-i18next";
 
 function Header() {
+  const [t, i18n] = useTranslation("global");
+
   useEffect(() => {
     const links = document.querySelectorAll<HTMLAnchorElement>('a[href^="#"]');
 
@@ -34,7 +37,7 @@ function Header() {
 
   return (
     <header>
-      <div className="navbar bg-base-100 gap-3 shadow-md flex justify-between items-center">
+      <div className="navbar bg-base-100 gap-3 shadow-md flex justify-between items-center fixed z-10">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -58,13 +61,13 @@ function Header() {
               className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
             >
               <li>
-                <a>Mis proyectos</a>
+                <a href="#my-projects">{t("header.myProjects")}</a>
               </li>
               <li>
-                <a>Experiencia</a>
+                <a href="#experience">{t("header.technologies")}</a>
               </li>
               <li>
-                <a>Tecnologías</a>
+                <a href="#technologies">{t("header.experience")}</a>
               </li>
             </ul>
           </div>
@@ -72,13 +75,13 @@ function Header() {
         <div className="navbar-center hidden lg:flex ">
           <ul className="menu menu-horizontal px-1 font-bold text-xl">
             <li>
-              <a href="#my-projects">Mis proyectos</a>
+              <a href="#my-projects">{t("header.myProjects")}</a>
             </li>
             <li>
-              <a href="#experience">Experiencia</a>
+              <a href="#technologies">{t("header.technologies")}</a>
             </li>
             <li>
-              <a href="#technologies">Tecnologías</a>
+              <a href="#experience">{t("header.experience")}</a>
             </li>
           </ul>
         </div>

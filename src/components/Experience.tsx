@@ -1,12 +1,12 @@
-import React from "react";
+import { useTranslation } from "react-i18next";
 
 function Experience() {
+  const [t, i18n] = useTranslation("global");
   return (
     <>
       <section id="experience">
         <h1 className="py-10 text-5xl font-bold text-center ">
-          {" "}
-          Mi Experiencia
+          {t("experience.title")}
         </h1>
         <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical px-32">
           <li>
@@ -27,16 +27,12 @@ function Experience() {
             <div className="timeline-start md:text-end mb-10">
               <time className="font-mono italic">
                 {" "}
-                (2017-2023) <br /> Ingeniero de Sistemas
+                (2017-2023) <br /> {t("experience.college.title")}
               </time>
               <div className="text-lg font-black">
                 Universidad Distrital Francisco José de Caldas
               </div>
-              Ingeniero de Sistemas graduado de la Universidad Distrital, con
-              sólida formación en ciencias básicas, humanísticas y técnicas.
-              Apasionado por la tecnología y comprometido con el mejoramiento
-              continuo. Enfocado en areas como Ingeniería de Software, Ciencias
-              de la computación, gestión informática y redes de la comunicación.
+              {t("experience.college.description")}
             </div>
             <hr />
           </li>
@@ -59,16 +55,12 @@ function Experience() {
             <div className="timeline-end mb-10">
               <time className="font-mono italic">
                 (2021)
-                <br /> Scripting Assistant
+                <br /> {t("experience.kantar.title")}
               </time>
               <div className="text-lg font-black">
                 Millward Brown Colombia S.A.S
               </div>
-              Colaborador activo en el diseño y realización de encuestas,
-              seguido de un análisis exhaustivo de los datos obtenidos. Destreza
-              en el uso del software IBM SPSS para llevar a cabo un análisis
-              estadístico efectivo, contribuyendo así al desarrollo y ejecución
-              exitosa de proyectos.
+              {t("experience.kantar.description")}
             </div>
             <hr />
           </li>
@@ -90,18 +82,12 @@ function Experience() {
             </div>
             <div className="timeline-start md:text-end mb-10">
               <time className="font-mono italic">
-                (2022-Actualmente) <br /> Desarrollador Front end Jr
+                (2022-Actualmente) <br /> {t("experience.exsis.title")}
               </time>
               <div className="text-lg font-black">
                 Exsis Software y Soluciones S.A.S
               </div>
-              Me he involucrado activamente en el diseño y mejora de
-              aplicaciones utilizando React, colaborando en la implementación de
-              un almacén de datos para centralizar la información empresarial
-              mediante el uso de Angular. También he participado en el
-              desarrollo de aplicaciones para la generación de contratos
-              inteligentes y manejo de transacciones inmobiliarias a través de
-              blockchain, utilizando React y Solidity.
+              {t("experience.exsis.description")}
             </div>
           </li>
         </ul>

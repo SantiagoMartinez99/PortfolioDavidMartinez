@@ -13,7 +13,7 @@ export const db: Project[] = [
     image: RedditProject,
     desc: "Pagina replicando el funcionamiento de Reddit junto a funcionalidad de traducción.",
     techUsed: ["JS", "HTML", "CSS", "Django"],
-    link: "asd",
+    link: "https://github.com/SantiagoMartinez99/ProyectoReddit",
   },
   {
     id: 2,
@@ -21,7 +21,7 @@ export const db: Project[] = [
     image: CitasMedicasImg,
     desc: "Aplicación web básica de manejo de citas de mascotas",
     techUsed: ["JS", "HTML", "Tailwind", "Zustand"],
-    link: "asd",
+    link: "https://github.com/SantiagoMartinez99/Citas-Veterinario-TS-Zustand",
   },
 
   {
@@ -30,7 +30,7 @@ export const db: Project[] = [
     image: ControlGastos,
     desc: "Aplicación web básica para el control de gastos básicos",
     techUsed: ["JS", "HTML", "CSS"],
-    link: "asd",
+    link: "https://github.com/SantiagoMartinez99/controlGastos",
   },
   {
     id: 4,
@@ -38,7 +38,7 @@ export const db: Project[] = [
     image: Propinas,
     desc: "Aplicación web básica para calcular propinas",
     techUsed: ["JS", "HTML", "CSS"],
-    link: "ad",
+    link: "https://github.com/SantiagoMartinez99/calculadoraPropinas",
   },
   {
     id: 5,
@@ -46,7 +46,7 @@ export const db: Project[] = [
     image: CalorieTracker,
     desc: "Aplicación web básica para el seguimiento y control de actividad física y alimentación y las calorías asociadas.",
     techUsed: ["JS", "HTML", "CSS"],
-    link: "asd",
+    link: "https://github.com/SantiagoMartinez99/CalorieTracker",
   },
   {
     id: 6,
@@ -54,7 +54,7 @@ export const db: Project[] = [
     image: TiendaVirtual,
     desc: "E commerce para una tienda de guitarras.",
     techUsed: ["JS", "HTML", "CSS"],
-    link: "asd",
+    link: "https://github.com/SantiagoMartinez99/TiendaVirtual",
   },
   {
     id: 7,
@@ -62,6 +62,6 @@ export const db: Project[] = [
     image: CitasMedicasImg,
     desc: "Aplicación web básica de manejo de citas de mascotas",
     techUsed: ["JS", "HTML", "CSS"],
-    link: "asd",
+    link: "https://github.com/SantiagoMartinez99/Citas-Medicas",
   },
 ];

@@ -1,0 +1,33 @@
+{
+  "header": {
+    "myProjects": "Mis Proyectos",
+    "technologies": "Tecnologías",
+    "experience": "Experiencia"
+  },
+  "hero": {
+    "heroTitle": "¡👋 Hola, soy Santiago Martinez!",
+    "heroDesc": "Soy Ingeniero de Sistemas enfocado en Desarrollo Web, principalmente con React, tambien uso Angular, y manejo JS, TS, Firebase, Django y otras tecnologias",
+    "btnContact": "Contáctame aquí",
+    "btnDownloadCV": "Descargar CV"
+  },
+  "myProjects": {
+    "technologies": "Tecnologías utilizadas:",
+    "btnGoToProject": "Ir al proyecto"
+  },
+  "experience": {
+    "title": "Experiencia",
+    "college": {
+      "title": "Ingeniero de Sistemas",
+      "description": "Ingeniero de Sistemas graduado de la Universidad Distrital, con sólida formación en ciencias básicas, humanísticas y técnicas. Apasionado por la tecnología y comprometido con el mejoramiento continuo. Enfocado en areas como Ingeniería de Software, Ciencias de la computación, gestión informática y redes de la comunicación."
+    },
+    "kantar": {
+      "title": "Asistente de scripting",
+      "description": "Colaborador activo en el diseño y realización de encuestas, seguido de un análisis exhaustivo de los datos obtenidos. Destreza en el uso del software IBM SPSS para llevar a cabo un análisis estadístico efectivo, contribuyendo así al desarrollo y ejecución exitosa de proyectos."
+    },
+    "exsis": {
+      "title": "Desarrollador Front end Jr",
+      "description": "Me he involucrado activamente en el diseño y mejora de aplicaciones utilizando React, colaborando en la implementación de un almacén de datos para centralizar la información empresarial mediante el uso de Angular. También he participado en el desarrollo de aplicaciones para la generación de contratos inteligentes y manejo de transacciones inmobiliarias a través de blockchain, utilizando React y Solidity."
+    }
+  },
+  "footer": {}
+}
