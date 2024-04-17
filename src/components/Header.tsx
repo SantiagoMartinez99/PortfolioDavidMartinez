@@ -37,7 +37,7 @@ function Header() {
 
   return (
     <header>
-      <div className="navbar bg-base-100 gap-3 shadow-md flex justify-between items-center fixed z-10">
+      <div className="navbar  gap-3  flex justify-between  fixed z-10">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -72,7 +72,7 @@ function Header() {
             </ul>
           </div>
         </div>
-        <div className="navbar-center hidden lg:flex ">
+        <div className="navbar-center hidden lg:flex w-1/2 justify-center shadow-md rounded-full opacity-100 bg-base-100 z-10">
           <ul className="menu menu-horizontal px-1 font-bold text-xl">
             <li>
               <a href="#my-projects">{t("header.myProjects")}</a>

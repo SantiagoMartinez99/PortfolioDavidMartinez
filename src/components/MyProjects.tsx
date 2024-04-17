@@ -73,8 +73,8 @@ function MyProjects() {
             key={project.id}
             className="card lg:card-side shadow-2xl  md:mx-72 mx-5 my-5 flex flex-col transition ease-in-out delay-100 hover:scale-110 "
           >
-            <figure className="lg:w-1/2 w-full h-full lg:h-1/2">
-              <img src={project.image} alt="Album" />
+            <figure className="lg:w-1/2 w-full h-full ">
+              <img className="" src={project.image} alt="Album" />
             </figure>
             <div className="card-body flex lg:w-1/2 w-full ">
               <h2 className="card-title text-2xl font-bold">{project.name}</h2>
