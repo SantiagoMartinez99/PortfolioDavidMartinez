@@ -3,8 +3,8 @@ import React from "react";
 function Footer() {
   return (
     <footer className="footer items-center p-4 ">
-      <nav className="grid-flow-col gap-4 place-self-center ">
-        <span>Copyright © 2024 - All right reserved</span>
+      <nav className="flex gap-4 place-self-center ">
+        <span>© 2024 - All right reserved</span>
         <a>
           <svg
             xmlns="http://www.w3.org/2000/svg"

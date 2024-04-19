@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 [data-theme="light"],
-[data-theme="dark"] section,
+[data-theme="dark"] ,section,
 .navbar-center,
 .join-item,
 hr,

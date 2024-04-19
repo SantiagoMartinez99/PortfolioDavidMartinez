@@ -1,12 +1,11 @@
+import { default as i18n, default as i18next } from "i18next";
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { I18nextProvider } from "react-i18next";
+import global_en from "../src/translations/en/global.json";
+import global_es from "../src/translations/es/global.json";
 import App from "./App.tsx";
 import "./index.css";
-import i18n, { ThirdPartyModule } from "i18next";
-import { I18nextProvider } from "react-i18next";
-import i18next from "i18next";
-import global_es from "../src/translations/es/global.json";
-import global_en from "../src/translations/en/global.json";
 
 i18n.init({
   interpolation: { escapeValue: false },

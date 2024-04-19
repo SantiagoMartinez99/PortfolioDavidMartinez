@@ -21,6 +21,14 @@ function App() {
     setTheme(newTheme);
   };
 
+  useEffect(() => {
+    window.onload = () => {
+      if (document.querySelector("html")) {
+        window.scrollTo(0, 0);
+      }
+    };
+  }, []);
+
   return (
     <>
       <Header />

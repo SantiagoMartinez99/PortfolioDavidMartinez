@@ -41,8 +41,8 @@ function Hero() {
           >
             {t("hero.heroTitle")}
           </motion.h1>
-          <motion.p
-            className="py-6 text-xl"
+          <motion.h2
+            className="py-6 text-2xl"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{
@@ -52,7 +52,7 @@ function Hero() {
             }}
           >
             {t("hero.heroDesc")}
-          </motion.p>
+          </motion.h2>
           <div className="flex gap-3">
             <motion.button
               className="btn btn-primary"
@@ -66,7 +66,13 @@ function Hero() {
             >
               {t("hero.btnContact")}
             </motion.button>
-            <motion.button
+            <motion.a
+              href={
+                document.documentElement.lang == "en"
+                  ? "/src/assets/cv/HojaDeVidaSantiagoMartinez.pdf"
+                  : "/src/assets/cv/CvDavidSantiagoMartinez.pdf"
+              }
+              download
               className="btn btn-primary"
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
@@ -77,7 +83,7 @@ function Hero() {
               }}
             >
               {t("hero.btnDownloadCV")}
-            </motion.button>
+            </motion.a>
           </div>
         </section>
       </div>

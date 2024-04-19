@@ -1,9 +1,8 @@
 import { useTranslation } from "react-i18next";
-
+import Reveal from "../utils/Reveal";
 function Experience() {
   const [t, i18n] = useTranslation("global");
   return (
-    <>
       <section id="experience">
         <h1 className="py-10 text-5xl font-bold text-center ">
           {t("experience.title")}
@@ -29,10 +28,14 @@ function Experience() {
                 {" "}
                 (2017-2023) <br /> {t("experience.college.title")}
               </time>
-              <div className="text-lg font-black">
-                Universidad Distrital Francisco José de Caldas
-              </div>
-              {t("experience.college.description")}
+              <Reveal direction="horizontal">
+                <div className="text-lg font-black">
+                  Universidad Distrital Francisco José de Caldas
+                </div>
+              </Reveal>
+              <Reveal direction="horizontal">
+                <>{t("experience.college.description")}</>
+              </Reveal>
             </div>
             <hr />
           </li>
@@ -57,10 +60,14 @@ function Experience() {
                 (2021)
                 <br /> {t("experience.kantar.title")}
               </time>
-              <div className="text-lg font-black">
-                Millward Brown Colombia S.A.S
-              </div>
-              {t("experience.kantar.description")}
+              <Reveal direction="horizontalReverse">
+                <div className="text-lg font-black">
+                  Millward Brown Colombia S.A.S
+                </div>
+              </Reveal>
+              <Reveal direction="horizontal">
+                <>{t("experience.kantar.description")}</>
+              </Reveal>
             </div>
             <hr />
           </li>
@@ -84,15 +91,18 @@ function Experience() {
               <time className="font-mono italic">
                 (2022-Actualmente) <br /> {t("experience.exsis.title")}
               </time>
-              <div className="text-lg font-black">
-                Exsis Software y Soluciones S.A.S
-              </div>
-              {t("experience.exsis.description")}
+              <Reveal direction="horizontal">
+                <div className="text-lg font-black">
+                  Exsis Software y Soluciones S.A.S
+                </div>
+              </Reveal>
+              <Reveal direction="horizontal">
+                <>{t("experience.exsis.description")}</>
+              </Reveal>
             </div>
           </li>
         </ul>
       </section>
-    </>
   );
 }
 
