@@ -1,5 +1,3 @@
-import GithubIcon from "../assets/techIcons/icons8-github (1).svg";
-
 function Footer() {
   return (
     <footer className="footer items-center p-4 ">

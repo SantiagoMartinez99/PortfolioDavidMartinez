@@ -3,7 +3,7 @@ import Reveal from "../utils/Reveal";
 import { useTranslation } from "react-i18next";
 
 function Technologies() {
-  const [t, i18n] = useTranslation("global");
+  const [t] = useTranslation("global");
 
   return (
     <section id="technologies">

@@ -5,7 +5,7 @@ import { dbTech } from "../data/dbTech";
 import Reveal from "../utils/Reveal";
 
 function MyProjects() {
-  const [t, i18n] = useTranslation("global");
+  const [t] = useTranslation("global");
   const [data] = useState(db);
   const [currentPage, setCurrentPage] = useState(1);
   const propertiesPerPage = 3;
