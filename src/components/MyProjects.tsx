@@ -2,7 +2,6 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { db } from "../data/db";
 import { dbTech } from "../data/dbTech";
-import { motion } from "framer-motion";
 import Reveal from "../utils/Reveal";
 
 function MyProjects() {
@@ -45,31 +44,33 @@ function MyProjects() {
   return (
     <section id="my-projects" className="w-full">
       <Reveal>
-        <h1 className="my-14 text-5xl font-bold text-center">Mis proyectos</h1>
+        <h1 className="my-14 text-5xl font-bold text-center">
+          {t("myProjects.title")}
+        </h1>
       </Reveal>
 
       <Reveal>
-      <span className="flex justify-center md:justify-end md:mx-72 px-5 ">
-        <div className="join">
-          <button className="join-item btn" onClick={prevPage}>
-            {" "}
-            &lt; Previous{" "}
-          </button>
-          {pageNumbers.map((number) => (
-            <button
-              key={number}
-              onClick={() => paginate(number)}
-              className="join-item btn"
-            >
-              {number}
+        <span className="flex justify-center md:justify-end md:mx-72 px-5 ">
+          <div className="join">
+            <button className="join-item btn" onClick={prevPage}>
+              {" "}
+              &lt; Previous{" "}
             </button>
-          ))}
-          <button className="join-item btn" onClick={nextPage}>
-            {" "}
-            Next &gt;
-          </button>
-        </div>
-      </span>
+            {pageNumbers.map((number) => (
+              <button
+                key={number}
+                onClick={() => paginate(number)}
+                className="join-item btn"
+              >
+                {number}
+              </button>
+            ))}
+            <button className="join-item btn" onClick={nextPage}>
+              {" "}
+              Next &gt;
+            </button>
+          </div>
+        </span>
       </Reveal>
 
       <section className="flex flex-col  px-5 py-5 items-center bg-base-100">

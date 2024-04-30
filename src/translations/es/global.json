@@ -11,11 +11,15 @@
     "btnDownloadCV": "Descargar CV"
   },
   "myProjects": {
+    "title": "Mis Proyectos 💻",
     "technologies": "Tecnologías utilizadas:",
     "btnGoToProject": "Ir al proyecto"
   },
+  "technologies": {
+    "title":"Tecnologías ⚒️"
+  },
   "experience": {
-    "title": "Experiencia",
+    "title": "Experiencia 🧑‍💻",
     "college": {
       "title": "Ingeniero de Sistemas",
       "description": "Ingeniero de Sistemas graduado de la Universidad Distrital, con sólida formación en ciencias básicas, humanísticas y técnicas. Apasionado por la tecnología y comprometido con el mejoramiento continuo. Enfocado en areas como Ingeniería de Software, Ciencias de la computación, gestión informática y redes de la comunicación."
@@ -29,5 +33,6 @@
       "description": "Me he involucrado activamente en el diseño y mejora de aplicaciones utilizando React, colaborando en la implementación de un almacén de datos para centralizar la información empresarial mediante el uso de Angular. También he participado en el desarrollo de aplicaciones para la generación de contratos inteligentes y manejo de transacciones inmobiliarias a través de blockchain, utilizando React y Solidity."
     }
   },
+
   "footer": {}
 }

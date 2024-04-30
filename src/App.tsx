@@ -1,11 +1,11 @@
-import { useState, useEffect } from "react";
-
+import { useEffect, useState } from "react";
+import Buttons from "./components/Buttons";
+import Experience from "./components/Experience";
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import MyProjects from "./components/MyProjects";
-import Experience from "./components/Experience";
-import Footer from "./components/Footer";
-import Buttons from "./components/Buttons";
+import Technologies from "./components/Technologies";
 
 function App() {
   const storedTheme = localStorage.getItem("theme");
@@ -35,6 +35,7 @@ function App() {
       <Hero />
       <MyProjects />
       <Experience />
+      <Technologies />
       <Footer />
       <Buttons toggleTheme={toggleTheme} />
     </>

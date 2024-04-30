@@ -11,11 +11,15 @@
     "btnDownloadCV": "Download CV"
   },
   "myProjects": {
+    "title": "My Projects 💻",
     "technologies": "Technologies used:",
     "btnGoToProject": "Go to project"
   },
+  "technologies": {
+    "title": "Technologies ⚒️"
+  },
   "experience": {
-    "title":"Experience",
+    "title": "Experience 🧑‍💻",
     "college": {
       "title": "Systems Engineer",
       "description": "Systems Engineer graduated from Universidad Distrital, with a solid background in basic, humanistic and technical sciences. Passionate about technology and committed to continuous improvement. Focused in areas such as software engineering, computer science, computer management and communication networks."
@@ -28,5 +32,6 @@
       "title": "Jr Front end developer",
       "description": "I have been actively involved in the design and improvement of applications using React, collaborating in the implementation of a data warehouse to centralize business information using Angular. I have also participated in the development of applications for the generation of smart contracts and management of real estate transactions through blockchain, using React and Solidity."
     }
-  }
+  },
+  "footer": {}
 }

@@ -1,8 +1,9 @@
 import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
+import { motion } from "framer-motion";
 
 function Header() {
-  const [t, i18n] = useTranslation("global");
+  const [t] = useTranslation("global");
 
   useEffect(() => {
     const links = document.querySelectorAll<HTMLAnchorElement>('a[href^="#"]');
@@ -37,7 +38,16 @@ function Header() {
 
   return (
     <header>
-      <div className="navbar  gap-3  flex justify-between  fixed z-10">
+      <motion.div
+        className="navbar  gap-3  flex justify-between  fixed z-10"
+        initial={{ opacity: 0, scale: 0.9 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{
+          duration: 0.8,
+          delay: 0.5,
+          ease: [0, 0.2, 0.7, 1.01],
+        }}
+      >
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -64,10 +74,10 @@ function Header() {
                 <a href="#my-projects">{t("header.myProjects")}</a>
               </li>
               <li>
-                <a href="#experience">{t("header.technologies")}</a>
+                <a href="#experience">{t("header.experience")}</a>
               </li>
               <li>
-                <a href="#technologies">{t("header.experience")}</a>
+                <a href="#technologies">{t("header.technologies")}</a>
               </li>
             </ul>
           </div>
@@ -77,16 +87,17 @@ function Header() {
             <li>
               <a href="#my-projects">{t("header.myProjects")}</a>
             </li>
-            <li>
-              <a href="#technologies">{t("header.technologies")}</a>
-            </li>
+
             <li>
               <a href="#experience">{t("header.experience")}</a>
+            </li>
+            <li>
+              <a href="#technologies">{t("header.technologies")}</a>
             </li>
           </ul>
         </div>
         <div className="navbar-end"></div>
-      </div>
+      </motion.div>
     </header>
   );
 }
