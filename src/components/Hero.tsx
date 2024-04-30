@@ -17,7 +17,7 @@ function Hero() {
       <div className="hero-content flex-col lg:flex-row gap-32 ">
         <motion.img
           className="max-w-sm rounded-full shadow-2xl"
-          src="src\assets\imagenSantiago.jpg"
+          src="src\assets\imagenSantiago.png"
           alt="profileImg"
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
