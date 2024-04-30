@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import GithubIcon from "../assets/techIcons/icons8-github (1).svg";
+import ProfileImg from "../assets/imagenSantiago.png";
 
 function Hero() {
   const [t, i18n] = useTranslation("global");
@@ -17,7 +18,7 @@ function Hero() {
       <div className="hero-content flex-col lg:flex-row gap-32 ">
         <motion.img
           className="max-w-sm rounded-full shadow-2xl"
-          src="src\assets\imagenSantiago.png"
+          src={ProfileImg}
           alt="profileImg"
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
