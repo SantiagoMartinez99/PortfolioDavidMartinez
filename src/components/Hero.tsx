@@ -2,8 +2,8 @@ import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import GithubIcon from "../assets/techIcons/icons8-github (1).svg";
 import ProfileImg from "../assets/imagenSantiago.png";
-import HDVSantiago from "../assets/cv/HojaDeVidaSantiagoMartinez.pdf";
-import CVSantiago from "../assets/cv/CvDavidSantiagoMartinez.pdf";
+import HDVSantiago from "../assets/cv/HDVSantiagoMartinez.pdf";
+import CVSantiago from "../assets/cv/CVSantiagoMartinez.pdf";
 
 function Hero() {
   const [t, i18n] = useTranslation("global");
