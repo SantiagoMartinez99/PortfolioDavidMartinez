@@ -2,6 +2,8 @@ import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import GithubIcon from "../assets/techIcons/icons8-github (1).svg";
 import ProfileImg from "../assets/imagenSantiago.png";
+import HDVSantiago from "../assets/cv/HojaDeVidaSantiagoMartinez.pdf";
+import CVSantiago from "../assets/cv/CvDavidSantiagoMartinez.pdf";
 
 function Hero() {
   const [t, i18n] = useTranslation("global");
@@ -68,11 +70,7 @@ function Hero() {
               {t("hero.btnContact")}
             </motion.a>
             <motion.a
-              href={
-                i18n.language === "es"
-                  ? "/src/assets/cv/HojaDeVidaSantiagoMartinez.pdf"
-                  : "/src/assets/cv/CvDavidSantiagoMartinez.pdf"
-              }
+              href={i18n.language === "es" ? HDVSantiago : CVSantiago}
               download
               className="btn btn-primary"
               initial={{ opacity: 0, scale: 0.9 }}
