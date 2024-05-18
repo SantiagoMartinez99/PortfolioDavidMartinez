@@ -3,10 +3,19 @@ import RedditProject from "../assets/projectImages/RedditProject.png";
 import CalorieTracker from "../assets/projectImages/calorieTrackerImg2.png";
 import TiendaVirtual from "../assets/projectImages/ecommerceImg.png";
 import ControlGastos from "../assets/projectImages/presupuestoImg copy.png";
+import CoRunning from "../assets/projectImages/coRunning.png"
 import Propinas from "../assets/projectImages/propinasImg.png";
 import type { Project } from "../types";
 
 export const db: Project[] = [
+  {
+    id: 0,
+    name: "Co Running (En construcción)",
+    image: CoRunning,
+    desc: "Página dedicada a ofrecer información completa y actualizada sobre el running en Colombia.",
+    techUsed: ["React", "TS", "HTML", "Tailwind", "DaisyUI",],
+    link: "https://github.com/SantiagoMartinez99/ProyectoReddit",
+  },
   {
     id: 1,
     name: "Clon Reddit",
