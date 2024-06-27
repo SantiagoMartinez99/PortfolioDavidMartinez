@@ -6,11 +6,15 @@
   },
   "hero": {
     "heroTitle": "¡👋 Hi, I'm Santiago Martinez!",
-    "heroDesc": "I am a Systems Engineer focused on Web Development, mainly with React, I also use Angular, and I manage JS, TS, Firebase, Django and other technologies.",
+    "heroDesc": "Systems Engineer and junior front-end developer specialized in React. With skills in JavaScript, TypeScript, Firebase, and Django, I am passionate about creating attractive and functional web applications, always eager to learn and improve with each project.",
     "btnContact": "Contact me here",
     "btnDownloadCV": "Download CV"
   },
   "myProjects": {
+    "slider": {
+      "previous": "Previous",
+      "next": "Next"
+    },
     "title": "My Projects 💻",
     "technologies": "Technologies used:",
     "btnGoToProject": "Go to project"
@@ -32,6 +36,5 @@
       "title": "Jr Front end developer",
       "description": "I have been actively involved in the design and improvement of applications using React, collaborating in the implementation of a data warehouse to centralize business information using Angular. I have also participated in the development of applications for the generation of smart contracts and management of real estate transactions through blockchain, using React and Solidity."
     }
-  },
-  "footer": {}
+  }
 }

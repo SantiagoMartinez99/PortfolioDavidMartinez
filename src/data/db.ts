@@ -21,7 +21,7 @@ export const db: Project[] = [
     id: 1,
     name: "Clon Reddit",
     image: RedditProject,
-    desc: "Pagina replicando el funcionamiento de un post de Reddit junto a funcionalidad de traducción.",
+    desc: "Página replicando el funcionamiento de un post de Reddit junto a funcionalidad de traducción.",
     techUsed: ["React", "JS", "HTML", "CSS", "ChakraUI", "Django"],
     link: "https://github.com/SantiagoMartinez99/ProyectoReddit",
   },

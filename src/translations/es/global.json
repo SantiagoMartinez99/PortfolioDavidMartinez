@@ -6,11 +6,15 @@
   },
   "hero": {
     "heroTitle": "¡👋 Hola, soy Santiago Martinez!",
-    "heroDesc": "Soy Ingeniero de Sistemas enfocado en Desarrollo Web, principalmente con React, tambien uso Angular, y manejo JS, TS, Firebase, Django y otras tecnologias",
+    "heroDesc": "Ingeniero de Sistemas y desarrollador junior front-end, especializado en React. Con habilidades en JavaScript, TypeScript, Firebase y Django, me apasiona crear aplicaciones web atractivas y funcionales, siempre buscando aprender y mejorar en cada proyecto.",
     "btnContact": "Contáctame aquí",
     "btnDownloadCV": "Descargar CV"
   },
   "myProjects": {
+    "slider":{
+      "previous": "Anterior",
+      "next": "Siguiente"
+    },
     "title": "Mis Proyectos 💻",
     "technologies": "Tecnologías utilizadas:",
     "btnGoToProject": "Ir al proyecto"
@@ -34,5 +38,42 @@
     }
   },
 
-  "footer": {}
+  "projects": [
+    {
+      "name": "Co Running (En construcción)",
+      "desc": "Página dedicada a ofrecer información completa y actualizada sobre el running en Colombia."
+    },
+    {
+      "name": "Clon Reddit",
+      "desc": "Página replicando el funcionamiento de un post de Reddit junto a funcionalidad de traducción."
+    },
+    {
+      "name": "App clima",
+      "desc": "Aplicación que consume una API para obtener información climática de una región específica."
+    },
+    {
+      "name":  "Citas Medicas V2",
+      "desc": "Aplicación web básica de manejo de citas de mascotas"
+    },
+    {
+      "name": "Control de Gastos",
+      "desc": "Aplicación web básica para el control de gastos básicos"
+    },
+    {
+      "name": "Calculadora de Propinas",
+      "desc": "Aplicación web básica para calcular propinas"
+    },
+    {
+      "name": "Contador de Calorías",
+      "desc": "Aplicación web básica para el seguimiento y control de actividad física y alimentación y las calorías asociadas."
+    },
+    {
+      "name": "Tienda Virtual",
+      "desc": "E commerce para una tienda de guitarras."
+    },
+    {
+      "name": "Citas Medicas",
+      "desc": "Aplicación web básica de manejo de citas de mascotas"
+    }
+  ]
 }
