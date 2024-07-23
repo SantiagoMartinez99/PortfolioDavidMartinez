@@ -39,10 +39,10 @@ export const dbTech: Tech[] = [
     name: "React",
     image: ReactIcon,
   },
-  {
-    name: "Angular",
-    image: AngularIcon,
-  },
+  // {
+  //   name: "Angular",
+  //   image: AngularIcon,
+  // },
   {
     name: "Zustand",
     image: ZustandIcon,
