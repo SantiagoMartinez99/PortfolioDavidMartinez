@@ -89,7 +89,7 @@ function Experience() {
           </div>
           <div className="timeline-start md:text-end mb-10">
             <time className="font-mono italic">
-              (2022-Actualmente) <br /> {t("experience.exsis.title")}
+              (2022-2024) <br /> {t("experience.exsis.title")}
             </time>
             <Reveal direction="horizontal">
               <div className="text-lg font-black">
