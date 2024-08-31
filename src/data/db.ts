@@ -15,7 +15,7 @@ export const db: Project[] = [
     image: CoRunning,
     desc: "Página dedicada a ofrecer información completa y actualizada sobre el running en Colombia.",
     techUsed: ["React", "TS", "HTML", "Tailwind", "DaisyUI"],
-    link: "https://github.com/SantiagoMartinez99",
+    link: "https://corunning.netlify.app",
   },
   {
     id: 1,
