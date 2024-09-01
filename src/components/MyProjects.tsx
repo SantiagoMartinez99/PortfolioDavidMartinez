@@ -73,22 +73,22 @@ function MyProjects() {
         </span>
       </Reveal>
       <section className="flex flex-col px-5 py-16 items-center bg-base-100">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mx-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mx-20 ">
           {currentProperties.map((project) => (
             <Reveal key={project.id}>
-              <div className="card bg-base-100  transition ease-in-out delay-100 hover:scale-110">
+              <div className="card bg-base-100  transition ease-in-out delay-100 hover:scale-90">
                 <figure>
                   <img
                     src={project.image}
                     alt="Album"
-                    className="w-full h-full object-cover"
+                    className="w-full h-60 object-fit"
                   />
                 </figure>
                 <div className="card-body">
                   <h2 className="card-title text-2xl font-bold">
                     {project.name}
                   </h2>
-                  <p className="text-xl">{project.desc}</p>
+                  <p className="text-xl h-40 ">{project.desc}</p>
                   <h4 className="text-xl font-bold">
                     {t("myProjects.technologies")}
                   </h4>
@@ -108,7 +108,7 @@ function MyProjects() {
                       );
                     })}
                   </div>
-                  <div className="card-actions justify-end">
+                  <div className="card-actions justify-end mt-5">
                     <a className="btn btn-primary" href={project?.link}>
                       {t("myProjects.btnGoToProject")}
                     </a>
