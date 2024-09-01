@@ -9,6 +9,7 @@ import MaterialUIIcon from "../assets/techIcons/icons8-material-ui-48.png";
 import TsIcon from "../assets/techIcons/icons8-mecanografiado-48.png";
 import PythonIcon from "../assets/techIcons/icons8-python-48.png";
 import ReactIcon from "../assets/techIcons/icons8-reaccionar-nativo-48.png";
+import ReduxIcon from "../assets/techIcons/icons8-redux-48.png";
 import TwIcon from "../assets/techIcons/icons8-viento-de-cola-48.png";
 import ZustandIcon from "../assets/techIcons/zustand.png";
 import type { Tech } from "../types";
@@ -38,10 +39,10 @@ export const dbTech: Tech[] = [
     name: "React",
     image: ReactIcon,
   },
-  // {
-  //   name: "Angular",
-  //   image: AngularIcon,
-  // },
+  {
+    name: "Redux",
+    image: ReduxIcon,
+  },
   {
     name: "Zustand",
     image: ZustandIcon,

@@ -13,8 +13,16 @@ export const db: Project[] = [
     id: 0,
     name: "Co Running (En construcción)",
     image: CoRunning,
-    desc: "Página dedicada a ofrecer información completa y actualizada sobre el running en Colombia.",
-    techUsed: ["React", "TS", "HTML", "Tailwind", "DaisyUI"],
+    desc: "Running Colombia es tu fuente confiable para información actualizada sobre el running en Colombia. Integramos Google Maps API para mostrar rutas y eventos en un mapa interactivo, respaldados por una base de datos actualizada regularmente para mantenerte al día con todas las novedades del mundo runner.",
+    techUsed: [
+      "React",
+      "TS",
+      "HTML",
+      "Tailwind",
+      "DaisyUI",
+      "Redux",
+      "Firebase",
+    ],
     link: "https://corunning.netlify.app",
   },
   {
