@@ -12,6 +12,8 @@ function MyProjects() {
   const indexOfLastProject = currentPage * propertiesPerPage;
   const indexOfFirstProject = indexOfLastProject - propertiesPerPage;
   const currentProperties = data.slice(indexOfFirstProject, indexOfLastProject);
+  const { i18n } = useTranslation();
+  const currentLanguage = i18n.language;
 
   const paginate = (pageNumber: number) => {
     setCurrentPage(pageNumber);
@@ -76,7 +78,7 @@ function MyProjects() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mx-20 ">
           {currentProperties.map((project) => (
             <Reveal key={project.id}>
-              <div className="card bg-base-100  transition ease-in-out delay-100 hover:scale-90">
+              <div className="card bg-base-100  transition ease-in-out delay-100 hover:scale-90 shadow-xl mb-10">
                 <figure>
                   <img
                     src={project.image}
@@ -85,10 +87,12 @@ function MyProjects() {
                   />
                 </figure>
                 <div className="card-body">
-                  <h2 className="card-title text-2xl font-bold">
+                  <h2 className="card-title text-2xl font-bold ">
                     {project.name}
                   </h2>
-                  <p className="text-xl h-40 ">{project.desc}</p>
+                  <p className="text-xl h-44">
+                    {currentLanguage === "en" ? project.descEng : project.desc}
+                  </p>
                   <h4 className="text-xl font-bold">
                     {t("myProjects.technologies")}
                   </h4>
