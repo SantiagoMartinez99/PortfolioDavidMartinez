@@ -78,7 +78,7 @@ function MyProjects() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mx-20 ">
           {currentProperties.map((project) => (
             <Reveal key={project.id}>
-              <div className="card bg-base-100  transition ease-in-out delay-100 hover:scale-90 shadow-xl mb-10">
+              <div className="card bg-base-100  transition ease-in-out delay-100 hover:scale-90 shadow-xl mb-10 ">
                 <figure>
                   <img
                     src={project.image}
@@ -89,6 +89,11 @@ function MyProjects() {
                 <div className="card-body">
                   <h2 className="card-title text-2xl font-bold ">
                     {project.name}
+                    {project.id === 0 && (
+                      <span className="indicator-item badge badge-primary  -top-0 -right-5 text-md h-7 ">
+                        Nuevo
+                      </span>
+                    )}
                   </h2>
                   <p className="text-xl h-44">
                     {currentLanguage === "en" ? project.descEng : project.desc}
