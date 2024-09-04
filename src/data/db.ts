@@ -11,7 +11,7 @@ import type { Project } from "../types";
 export const db: Project[] = [
   {
     id: 0,
-    name: "Co Running (En construcción)",
+    name: "Co Running (Beta)",
     image: CoRunning,
     desc: "Running Colombia ofrece información actualizada sobre running en el país. Con Google Maps API, mostramos rutas y eventos en un mapa interactivo, respaldados por una base de datos actualizada para mantenerte al tanto de las últimas novedades en el mundo runner.",
     descEng:
