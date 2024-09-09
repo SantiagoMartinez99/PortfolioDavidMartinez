@@ -6,7 +6,7 @@
   },
   "hero": {
     "heroTitle": "¡👋 Hi, I'm Santiago Martinez!",
-    "heroDesc": "Systems Engineer and junior front-end developer specialized in React. With skills in JavaScript, TypeScript, Firebase, and Django, I am passionate about creating attractive and functional web applications, always eager to learn and improve with each project.",
+    "heroDesc": "Systems Engineer and front-end developer specialized in React. With skills in JavaScript, TypeScript, Firebase, and Django, I am passionate about creating attractive and functional web applications, always eager to learn and improve with each project.",
     "btnContact": "Contact me here",
     "btnDownloadCV": "Download CV"
   },
