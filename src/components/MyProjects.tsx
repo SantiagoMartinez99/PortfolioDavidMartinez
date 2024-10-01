@@ -95,7 +95,7 @@ function MyProjects() {
                       </span>
                     )}
                   </h2>
-                  <p className="text-xl h-44">
+                  <p className="text-xl h-44 mb-10">
                     {currentLanguage === "en" ? project.descEng : project.desc}
                   </p>
                   <h4 className="text-xl font-bold">
@@ -111,7 +111,7 @@ function MyProjects() {
                           <img
                             src={tech?.image}
                             alt={tech?.name}
-                            className="h-12 w-12 object-cover"
+                            className="h-12 w-12 object-contain"
                           />
                         </a>
                       );

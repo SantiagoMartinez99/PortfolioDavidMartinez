@@ -43,8 +43,8 @@ export const db: Project[] = [
     image: weatherProject,
     desc: "Aplicación que consume una API para obtener información climática de una región específica. Desarrollada con React y TypeScript para la funcionalidad, HTML y CSS para el diseño, y Zustand para el manejo del estado.",
     descEng:
-      "Application that consumes an API to get weather information for a specific region. Developed with React and TypeScript for functionality, HTML and CSS for layout, and Zustand for state handling.",
-    techUsed: ["React", "TS", "HTML", "CSS", "Zustand"],
+      "Application that consumes an API to get weather information for a specific region. Developed with React and TypeScript for functionality, HTML and CSS for layout.",
+    techUsed: ["React", "TS", "HTML", "CSS"],
     link: "https://github.com/SantiagoMartinez99/clima-react-typescript",
   },
   {
