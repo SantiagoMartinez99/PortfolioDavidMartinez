@@ -75,7 +75,7 @@ function MyProjects() {
         </span>
       </Reveal>
       <section className="flex flex-col px-5 py-16 items-center bg-base-100">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mx-20 ">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mx-10 md:mx-20 ">
           {currentProperties.map((project) => (
             <Reveal key={project.id}>
               <div className="card bg-base-100  transition ease-in-out delay-100 hover:scale-90 shadow-xl mb-10 ">
@@ -87,7 +87,7 @@ function MyProjects() {
                   />
                 </figure>
                 <div className="card-body">
-                  <h2 className="card-title text-2xl font-bold ">
+                  <h2 className="card-title text-2xl font-bold">
                     {project.name}
                     {project.id === 0 && (
                       <span className="indicator-item badge badge-primary  -top-0 -right-5 text-md h-7 ">
@@ -95,13 +95,13 @@ function MyProjects() {
                       </span>
                     )}
                   </h2>
-                  <p className="text-xl h-44 mb-10">
+                  <p className="text-xl md:h-60 ">
                     {currentLanguage === "en" ? project.descEng : project.desc}
                   </p>
                   <h4 className="text-xl font-bold">
                     {t("myProjects.technologies")}
                   </h4>
-                  <div className="flex gap-2">
+                  <div className="flex gap-2 justify-end">
                     {project.techUsed.map((techName) => {
                       const tech = dbTech.find(
                         (tech) => tech.name === techName
