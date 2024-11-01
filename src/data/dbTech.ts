@@ -12,6 +12,8 @@ import ReactIcon from "../assets/techIcons/icons8-reaccionar-nativo-48.png";
 import ReduxIcon from "../assets/techIcons/icons8-redux-48.png";
 import TwIcon from "../assets/techIcons/icons8-viento-de-cola-48.png";
 import ZustandIcon from "../assets/techIcons/zustand.png";
+import PostgreSQLIcon from "../assets/techIcons/icons8-postgre-sql-a-free-and-open-source-relational-database-management-system-48.png";
+import JestIcon from "../assets/techIcons/icons8-jest-can-collect-code-coverage-information-from-entire-projects-48.png";
 import type { Tech } from "../types";
 
 export const dbTech: Tech[] = [
@@ -70,5 +72,13 @@ export const dbTech: Tech[] = [
   {
     name: "Firebase",
     image: FirebaseIcon,
+  },
+  {
+    name: "PostgreSQL",
+    image: PostgreSQLIcon,
+  },
+  {
+    name: "Jest",
+    image: JestIcon,
   },
 ];

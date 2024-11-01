@@ -6,6 +6,7 @@ import ControlGastos from "../assets/projectImages/presupuestoImg copy.png";
 import weatherProject from "../assets/projectImages/weatherProject.png";
 import CoRunning from "../assets/projectImages/coRunning.png";
 import Propinas from "../assets/projectImages/propinasImg.png";
+import FullStack from "../assets/projectImages/FullStackProject.png";
 import type { Project } from "../types";
 
 export const db: Project[] = [
@@ -39,14 +40,15 @@ export const db: Project[] = [
   },
   {
     id: 2,
-    name: "App clima",
-    image: weatherProject,
-    desc: "Aplicación que consume una API para obtener información climática de una región específica. Desarrollada con React y TypeScript para la funcionalidad, HTML y CSS para el diseño, y Zustand para el manejo del estado.",
+    name: "Inventario FullStack",
+    image: FullStack,
+    desc: "Aplicación web para la gestión de inventario en tiendas, desarrollada con React, TypeScript, Node.js, Sequelize, Jest, Supertest, Express y PostgreSQL, que permite agregar, editar y eliminar productos, así como actualizar su disponibilidad en tiempo real.",
     descEng:
-      "Application that consumes an API to get weather information for a specific region. Developed with React and TypeScript for functionality, HTML and CSS for layout.",
-    techUsed: ["React", "TS", "HTML", "CSS"],
-    link: "https://github.com/SantiagoMartinez99/clima-react-typescript",
+      "Basic web application for managing basic expenses. Uses React and JavaScript for functionality, HTML and Tailwind CSS for layout, and Zustand for state management.",
+    techUsed: ["React", "JS", "HTML", "Tailwind", "PostgreSQL", "Jest"],
+    link: "https://github.com/SantiagoMartinez99/rest_apis_typescript_frontend",
   },
+
   {
     id: 3,
     name: "Citas Medicas V2",
@@ -108,5 +110,15 @@ export const db: Project[] = [
       "Basic web application for pet appointment management. Developed with React and JavaScript for functionality, HTML for structure, and Tailwind CSS for design.",
     techUsed: ["React", "JS", "HTML", "Tailwind"],
     link: "https://github.com/SantiagoMartinez99/Citas-Medicas",
+  },
+  {
+    id: 9,
+    name: "App clima",
+    image: weatherProject,
+    desc: "Aplicación que consume una API para obtener información climática de una región específica. Desarrollada con React y TypeScript para la funcionalidad, HTML y CSS para el diseño, y Zustand para el manejo del estado.",
+    descEng:
+      "Application that consumes an API to get weather information for a specific region. Developed with React and TypeScript for functionality, HTML and CSS for layout.",
+    techUsed: ["React", "TS", "HTML", "CSS"],
+    link: "https://github.com/SantiagoMartinez99/clima-react-typescript",
   },
 ];
